@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en" id="home">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Kelola Berita</title>
+      <link rel="stylesheet" href="assets/css/bootstrap.css">
+      <link rel="stylesheet" href="assets/css/style.css">
+  </head>
+  <!-- Body Section -->
+  <body>
+      <div class="container"><h1 class="text-center">Sistem Informasi Lowongan Kerja NF - SILOKERNF </h1></div>
+<!-- Start NAV -->
+      <nav class="navbar navbar-expand-lg navbar-light ">
+        
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                  <a class="nav-link " href="dashboard.html">Kelola Loker</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link " href="kelola-mitra.html">Kelola Mitra</a>
+                </li>
+                <li class="nav-item" >
+                  <a class="nav-link " href="kelola-berita.html">Kelola Berita</a>
+                </li>
+              </ul>
+              <form class="form-inline my-2 my-lg-0">
+                <!-- <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <p><a href="#">Login</a></p> -->
+            
+                  <li class="nav-item" style="padding-top: 10px;"><p><a href="login.html">Logout</a></p></li>
+              
+              </form>
+        </div>
+      </nav>
+<!-- END NAV -->
+<div class="d-flex justify-content-end responsif" style="margin-right: 20px;">
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="index.html"> Home </a></li>
+        <li class="breadcrumb-item active" aria-current="page">Kelola Berita</li>
+
+      </ol>
+    </nav>
+  </div>
+<div class="container-fluid">
+    <div class="row">
+      <main class="col-md-9 ms-sm-auto col-lg-12 px-md-4">
+        <!-- <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+          <h1 class="h2">Dashboard</h1>
+        </div> -->
+        <div style="margin-bottom: 10px;border-radius: 10px;background-color: rgb(233, 233, 233);padding:20px;">
+        <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pb-3 mb-3 border-bottom">
+        <h2>Kelola Berita</h2>
+        <div class="btn-toolbar mb-2 mb-md-0">
+            <button type="button" class="btn btn-md btn-success" data-toggle="modal" href="#modalTambah">Tambah Berita</button>
+          </div>
+        </div>
+        <div class="table-responsive">
+          <table class="table table-striped table-sm potong">
+            <thead>
+              <tr class="">
+                <th>No</th>
+                <th>Judul Berita</th>
+                <th>Gambar</th>
+                <th>Isi Berita</th>
+                <th>Penulis</th>
+                <th>Tanggal</th>
+                <th>Action</th>
+              </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td id="judul1">Mahasiswa NF membuat portal info LoKer!</td>
+                    <td><div style="height: 50px;" id="gambar1"><img src="assets/img/stt.jpg" alt="tes"></div></td>
+                    <td id="isi1">Mahasiswa NF berhasil membaut sebuah portal LOKER untuk menjadi penghubung antara job seeker dengan dunia kerja, adalah Fulan, mahasiwa NF semester 3 dengan dengan rekan sekelasnya bernama fulanah yang mengerjakan proyek luar biasa ini, "Ditengah masa pandemi, daripada gabut, kami mencoba membangun website ini, dan tiba-tiba sudah jadi, tanpa kami sadari ternyata banyak sekali yang berminat dengan website kami" ungkap Fulan kepada tim SILOKERNF, Rabu 30 Desember 2020 kemarin.</td>
+                    <td id="penulis1">Admin</td>
+                    <td id="tanggal1">12 Jan 2020</td>
+                    <td>
+                        <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" href="#modalDetail" data-idberita="1">Detail</button>
+                        <button type="button" class="btn btn-warning btn-sm" data-toggle="modal" href="#modalEdit" data-idberita="1">Edit</button>
+                        <button type="button" class="btn btn-danger btn-sm" data-toggle="modal" href="#modalHapus">Hapus</button>
+                    </td>
+                  </tr>
+              <tr>
+                <td>2</td>
+                <td id="judul2">Kuliah semeseter depan, offline atau online?</td>
+                <td><div style="height: 50px;" id="gambar2"><img src="assets/img/covid.jpg" alt="tes"></div></td>
+                <td id="isi2">Pandemi yang tak kunjung henti membuat semua kegiatan belajar mengajaraa dari semua jenjang terganggu, pertanyaannya, bagaimana dengan semester ini? Dilansir dari media terpercaya, Mendikbud Nadiem Makariem mengatakan bahwa kampus sudah diizinka untuk menggelar kegiatan pembelajaran secara offline, dan keputusannya diserahkan kembali kepada pemerintah daerah dan kampus sendiri. Namun belakangan Menkes Budi Gunawan Sadikin mengatakan bahwa akan mengadakan PSBB kembali di beberapa kota yang mana artinya Sekolah dan Kuliah semester depan masih harus online</td>
+                <td id="penulis2">Admin</td>
+                <td id="tanggal2">22 Jan 2020</td>
+                <td>
+                    <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" href="#modalDetail" data-idberita="2">Detail</button>
+                    <button type="button" class="btn btn-warning btn-sm" data-toggle="modal" href="#modalEdit" data-idberita="2">Edit</button>
+                    <button type="button" class="btn btn-danger btn-sm" data-toggle="modal" href="#modalHapus">Hapus</button>
+                </td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td id="judul3">Perkembangan kasus COVID-19 di Indonesia</td>
+                <td><div style="height: 50px;" id="gambar3"><img src="assets/img/cov.jpeg" alt="tes"></div></td>
+                <td id="isi3">Hinggak kini, kasus COVID-19 di Indonesia belum juga menunjukkan tanda tanda pengurangan, bahkan hingga tanggal 27 Januari 2021 kemarin, dikabarkan bahwa penderita Covid di Indonesia sudah menembus angka lebih dari 1 Juta jiwa. Tentu ini bukan angka yang sedikit, dilansir dari beberapa media, jika dalam beberapa minggu kedepan penderita covid tidak mengalami penurunan, maka dapat dipastikan rumah sakit di beberapa provinsi akan kolaps dan tidak mampu lagi menampung pasien baru. </td>
+                <td id="penulis3">Admin</td>
+                <td id="tanggal3">3 Jan 2020</td>
+                <td>
+                    <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" href="#modalDetail" data-idberita="3">Detail</button>
+                    <button type="button" class="btn btn-warning btn-sm" data-toggle="modal" href="#modalEdit" data-idberita="3">Edit</button>
+                    <button type="button" class="btn btn-danger btn-sm" data-toggle="modal" href="#modalHapus">Hapus</button>
+                </td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td id="judul4">Pengaruh pandemi terhadap pekerja</td>
+                <td><div style="height: 50px;" id="gambar4"><img src="assets/img/phk.jpg" alt="tes"></div></td>
+                <td id="isi4" class="text-truncate">Pandemi memiliki dampak yang luar biasa, semua kalangan terkena dampaknya termasuk pekerja, nah apa saja dampak pandemi terhadap pekerja? Dilansir dari beberapa media, semenjak adanya pandemi COVID-19, pengangguran di Indonesia bertambah sebanyak 3,7 Juta jiwa. Dikatakn juga, jika keadaan tak kunjung membaik, maka diprediksi pengangguran indonesia akan menembus 12 juta jiwa. </td>
+                <td id="penulis4">Admin</td>
+                <td id="tanggal4">4 Jan 2020</td>
+                <td>
+                    <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" href="#modalDetail" data-idberita="4">Detail</button>
+                    <button type="button" class="btn btn-warning btn-sm" data-toggle="modal" href="#modalEdit" data-idberita="4">Edit</button>
+                    <button type="button" class="btn btn-danger btn-sm" data-toggle="modal" href="#modalHapus">Hapus</button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        </div>
+        <div class="modal fade bd-example-modal-lg" id="modalDetail" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Detail Berita</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <h5 id="judul"></h5>
+                  <div id="gambar" style="width:max;"></div>
+                  <p id="isi" style="text-align: justify;"></p>
+                  <br>
+                  <br>
+                  <span id="penulis"></span>
+                  <span id="tanggal"></span>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal fade" id="modalEdit" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Edit Berita</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <form>
+                    <div class="form-group">
+                      <label for="tanggal" class="col-form-label">Judul Berita</label>
+                      <input type="text" class="form-control" id="judul" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="recipient-name" class="col-form-label">Gambar</label>
+                        <div id="gambar" style="margin-left: auto;margin-right: auto;display: block; width: 60%;" center></div>
+                        <input type="file" class="form-control" id="gambar-baru">
+                      </div>
+                      <div class="form-group">
+                        <label for="recipient-name" class="col-form-label">Isi Berita</label>
+                        <textarea rows="10" type="text" class="form-control" id="isi"></textarea>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Simpan</button>
+                      </div>
+                  </form>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+          <div class="modal fade" id="modalHapus" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Hapus Berita</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <h5>Apakah anda ingin Menghapus Berita ini?</h5>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Batal</button>
+                  <button type="button" class="btn btn-danger">Hapus</button>
+                </div>
+              </div>
+            </div>
+          </div>
+      </main>
+    </div>
+  </div>
+  <div class="modal fade" id="modalTambah" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Tambah Berita</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            <form>
+                <div class="form-group">
+                  <label for="tanggal" class="col-form-label">Judul Berita</label>
+                  <input type="text" class="form-control" id="judul">
+                </div>
+                <div id="gambar">
+
+                </div>
+                <div class="form-group">
+                    <label for="recipient-name" class="col-form-label">Gambar</label>
+                    <input type="file" class="form-control" id="gambar-baru">
+                  </div>
+                  <div class="form-group">
+                    <label for="recipient-name" class="col-form-label">Isi Berita</label>
+                    <textarea rows="15" type="text" class="form-control" id="isi"></textarea>
+                  </div>
+              </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-success">Tambahkan</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+  
+      
+
+<!-- END Tentang SILOKER -->
+      <footer >
+        <div class="container text-left">
+            <div class="row">
+              <p class="">Develop By Mahasiswa STT-NF @2021</p>
+            </div>
+        </div>
+      </footer>
+
+    <!-- <footer class="ass">
+        <p>Submission Dicoding, Iqbal Assegaf, 2020</p>            
+    </footer> -->
+    
+      <script src="assets/js/jquery.js"></script> 
+      <script src="assets/js/popper.js"></script> 
+      <script src="assets/js/bootstrap.js"></script>
+      <script src="assets/js/bootstrap.min.js"></script>
+
+      <script>
+        $('#modalEdit').on('show.bs.modal', function (event) {
+  var button = $(event.relatedTarget) // Button that triggered the modal
+  var id = button.data('idberita')
+  var judul = $('#judul'+id).html()
+  var gambar = $('#gambar'+id).html()
+  var isi = $('#isi'+id).html()
+  // Extract info from data-* attributes
+  // If necessary, you could initiate an AJAX request here (and then do the updating in a callback).
+  // Update the modal's content. We'll use jQuery here, but you could use a data binding library or other methods instead.
+  var modal = $(this)
+  modal.find('#judul').val(judul)
+  modal.find('.modal-body #gambar').html(gambar)
+  modal.find('.modal-body #isi').val(isi)
+})
+
+$('#modalDetail').on('show.bs.modal', function (event) {
+  var button = $(event.relatedTarget) // Button that triggered the modal
+  var id = button.data('idberita')
+  var judul = $('#judul'+id).html()
+  var gambar = $('#gambar'+id).html()
+  var isi = $('#isi'+id).html()
+  var penulis = $('#penulis'+id).html()
+  var tanggal = $('#tanggal'+id).html()
+  // Extract info from data-* attributes
+  // If necessary, you could initiate an AJAX request here (and then do the updating in a callback).
+  // Update the modal's content. We'll use jQuery here, but you could use a data binding library or other methods instead.
+  var modal = $(this)
+  modal.find('#judul').html(judul)
+  modal.find('.modal-body #gambar').html(gambar)
+  modal.find('.modal-body #isi').html(isi)
+  modal.find('.modal-body #penulis').html(penulis)
+  modal.find('.modal-body #tanggal').html(tanggal)
+})
+    </script>
+  </body>
+</html>

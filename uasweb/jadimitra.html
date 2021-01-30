@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <title>Daftar menjadi Mitra</title>
+      <link rel="stylesheet" href="assets/css/bootstrap.css">
+      <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+      <link rel="stylesheet" href="assets/css/style.css">
+  </head>
+  <!-- Body Section -->
+  <body>
+      <div class="container"><h1 class="text-center">Sistem Informasi Lowongan Kerja NF - SILOKERNF </h1></div>
+      <nav class="navbar navbar-expand-lg navbar-light ">
+        
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="lowbar.html">Lowongan Baru</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="isiloker.html">Isi Loker</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="mitra.html">Daftar Mitra</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="berita.html">Berita</a>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <!-- <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <p><a href="#">Login</a></p> -->
+            
+              <li class="nav-item"><input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search"></li>
+              <li class="nav-item" style="padding-top: 10px;"><p><a href="login.html">Login</a></p></li>
+            
+          </form>
+        </div>
+      </nav>
+
+      <!-- Form -->
+
+      <div class="d-flex justify-content-end responsif" style="margin-right: 20px;">
+        <nav aria-label="breadcrumb ">
+          <ol class="breadcrumb" style="background-color: white;">
+            <li class="breadcrumb-item"><a href="index.html"> Home </a></li>
+            <li class="breadcrumb-item"><a href="mitra.html"> Daftar Mitra </a></li>
+            <li class="breadcrumb-item active" aria-current="page">Form Jadi Mitra</li>
+
+          </ol>
+        </nav>
+      </div>
+      <div class="area">
+          
+        <form class="needs-validation" novalidate>
+          <h4 class="text-center" style="margin-bottom: 20px;">Form Menjadi Mitra</h4>
+          <hr class="my-4">
+          <div class="form-group row">
+            <label for="organisasi" class="col-sm-4 col-form-label">Nama Perusahaan / Organisasi</label>
+            <div class="col-sm-7">
+              <input type="text" class="form-control" id="organisasi" placeholder="Nama Perusahaan" required value="">
+              <div class="invalid-feedback">
+                Masukkan nama perusahaan!
+               </div>
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="bidang" class="col-sm-4 col-form-label">Bidang Usaha</label>
+            <div class="col-sm-4">
+              <select name="bidang" id="bidang" class="form-control" required value="">
+                <option value="">Pilih bidang</option>
+                <option value="perbankan">Perbankan</option>
+                <option value="elektronik">Elektronik</option>
+                <option value="jasa">Jasa</option>
+                <option value="it">IT</option>
+              </select>
+              <div class="invalid-feedback">
+                Pilih salah satu!
+              </div>
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="deskripsi" class="col-sm-4 col-form-label">Alamat Kantor</label>
+            <div class="col-sm-7">
+              <textarea class="form-control" id="deskripsi" rows="3" placeholder="Sebutkan alamat lengkap kantor anda" required></textarea>
+              <div class="invalid-feedback">
+                Masukkan alamat kantor anda!
+              </div>
+            </div>
+          </div>
+
+          <div class="form-group row">
+            <label for="cp" class="col-sm-4 col-form-label">Contact Person</label>
+            <div class="col-sm-4">
+              <input type="number" class="form-control" id="cp" placeholder="0213456789" required value="" >
+              <div class="invalid-feedback">
+                Masukkan nomor kontak!
+              </div>
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="email" class="col-sm-4 col-form-label">Email</label>
+            <div class="col-sm-7">
+              <input type="email" class="form-control" id="email" placeholder="your@email" required value="">
+              <div class="invalid-feedback">
+                Masukkan email yang valid!
+              </div>
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="organisasi" class="col-sm-4 col-form-label">Website</label>
+            <div class="col-sm-7">
+              <input type="text" class="form-control" id="organisasi" placeholder="https://" required>
+              <div class="invalid-feedback">
+                Masukkan alamat website!
+              </div>
+            </div>
+          </div>
+
+          <hr class="my-4">
+          <div class="form-group row">
+            <div class="col-sm-4"></div>
+            <div class="col-sm-8">
+              <button type="submit" class="btn btn-primary">Submit</button>
+              <button type="reset" style="margin-right:20px" class="btn btn-warning" data-toggle="modal" data-target="#mymodal">
+                Reset
+              </button>
+              <div class="modal fade" id="mymodal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">Reset Form!</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      Form anda sudah di reset!
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal" onclick="reload()">Tutup</button>
+                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+      <!-- END FORM -->
+      <footer>
+        <div class="container text-left">
+            <div class="row">
+              <p class="">Develop By Mahasiswa STT-NF @2021</p>
+            </div>
+        </div>
+      </footer>
+
+
+      <script src="assets/js/jquery.js"></script> 
+      <script src="assets/js/popper.js"></script> 
+      <script src="assets/js/bootstrap.js"></script>
+      <script src="assets/js/bootstrap.min.js"></script>
+      <script src="assets/js/form.js"></script>
+  </body>
+</html>

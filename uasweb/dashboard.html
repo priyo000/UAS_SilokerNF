@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en" id="home">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Kelola Loker</title>
+      <link rel="stylesheet" href="assets/css/bootstrap.css">
+      <link rel="stylesheet" href="assets/css/style.css">
+  </head>
+  <!-- Body Section -->
+  <body>
+      <div class="container"><h1 class="text-center">Sistem Informasi Lowongan Kerja NF - SILOKERNF </h1></div>
+<!-- Start NAV -->
+      <nav class="navbar navbar-expand-lg navbar-light ">
+        
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link " href="dashboard.html">Kelola Loker</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="kelola-mitra.html">Kelola Mitra</a>
+            </li>
+            <li class="nav-item" >
+              <a class="nav-link " href="kelola-berita.html">Kelola Berita</a>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <!-- <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <p><a href="#">Login</a></p> -->
+        
+              <li class="nav-item" style="padding-top: 10px;"><p><a href="login.html">Logout</a></p></li>
+          
+          </form>
+        </div>
+      </nav>
+<!-- END NAV -->
+<div class="d-flex justify-content-end responsif" style="margin-right: 20px;">
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="index.html"> Home </a></li>
+        <li class="breadcrumb-item active" aria-current="page">Kelola Loker</li>
+
+      </ol>
+    </nav>
+  </div>
+<div class="container-fluid">
+    <div class="row">
+      <main class="col-md-9 ms-sm-auto col-lg-12 px-md-4">
+        <!-- <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+          <h1 class="h2">Dashboard</h1>
+        </div> -->
+        <div style="margin-bottom: 10px;border-radius: 10px;background-color: rgb(233, 233, 233);padding:20px;">
+        <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pb-3 mb-3 border-bottom">
+        <h2>Kelola Loker</h2>
+        <div class="btn-toolbar mb-2 mb-md-0">
+            <button type="button" class="btn btn-md btn-success" data-toggle="modal" href="#modalTambah">Tambah Loker</button>
+          </div>
+        </div>
+        <div class="table-responsive">
+          <table class="table table-striped table-sm">
+            <thead>
+              <tr class="">
+                <th>No</th>
+                <th>Tanggal</th>
+                <th>Nama Perusahaan</th>
+                <th>KOntak Person</th>
+                <th>Email</th>
+                <th>Deskripsi Lowongan</th>
+                <th>Action</th>
+              </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td id="tanggal1">12 Jan 2020</td>
+                    <td id="nama1">PT.Emas Mulya</td>
+                    <td id="kontak1">+62891343430</td>
+                    <td id="email1">emasmulya@gmail.com</td>
+                    <td id="deskripsi1">Administrasi System</td>
+                    <td>
+                        <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" href="#modalDetail" data-idloker="1">Detail</button>
+                        <button type="button" class="btn btn-warning btn-sm" data-toggle="modal" href="#modalEdit" data-idloker="1">Edit</button>
+                        <button type="button" class="btn btn-danger btn-sm" data-toggle="modal" href="#modalHapus">Hapus</button>
+                    </td>
+                  </tr>
+              <tr>
+                <td>2</td>
+                <td id="tanggal2">22 Jan 2020</td>
+                <td id="nama2">PT.Batu Bata</td>
+                <td id="kontak2">+62892332230</td>
+                <td id="email2">batubata@gmail.com</td>
+                <td id="deskripsi2">Expert JS Developer</td>
+                <td>
+                    <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" href="#modalDetail" data-idloker="2">Detail</button>
+                    <button type="button" class="btn btn-warning btn-sm" data-toggle="modal" href="#modalEdit" data-idloker="2">Edit</button>
+                    <button type="button" class="btn btn-danger btn-sm" data-toggle="modal" href="#modalHapus">Hapus</button>
+                </td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td id="tanggal3">3 Jan 2020</td>
+                <td id="nama3">PT.Matahari Terbit</td>
+                <td id="kontak3">+628933343535</td>
+                <td id="email3">matahriterbit@gmail.com</td>
+                <td id="deskripsi3">Software Engineer</td>
+                <td>
+                    <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" href="#modalDetail" data-idloker="3">Detail</button>
+                    <button type="button" class="btn btn-warning btn-sm" data-toggle="modal" href="#modalEdit" data-idloker="3">Edit</button>
+                    <button type="button" class="btn btn-danger btn-sm" data-toggle="modal" href="#modalHapus">Hapus</button>
+                </td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td id="tanggal4">4 Jan 2020</td>
+                <td id="nama4">PT.Es Teler Kite</td>
+                <td id="kontak4">+628943335343643</td>
+                <td id="email4">estelerkite@gmail.com</td>
+                <td id="deskripsi4">Fullstack Developer</td>
+                <td>
+                    <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" href="#modalDetail" data-idloker="4">Detail</button>
+                    <button type="button" class="btn btn-warning btn-sm" data-toggle="modal" href="#modalEdit" data-idloker="4">Edit</button>
+                    <button type="button" class="btn btn-danger btn-sm" data-toggle="modal" href="#modalHapus">Hapus</button>
+                </td>
+              </tr>
+              <tr>
+                <td>5</td>
+                <td id="tanggal5">1 Jan 2020</td>
+                <td id="nama5">PT.Indah Perkasa</td>
+                <td id="kontak5">+628955343430</td>
+                <td id="email5">indahperkasa@gmail.com</td>
+                <td id="deskripsi5">Proffesional Ads</td>
+                <td>
+                    <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" href="#modalDetail" data-idloker="5">Detail</button>
+                    <button type="button" class="btn btn-warning btn-sm" data-toggle="modal" href="#modalEdit" data-idloker="5">Edit</button>
+                    <button type="button" class="btn btn-danger btn-sm" data-toggle="modal" href="#modalHapus">Hapus</button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        </div>
+        <div class="modal fade" id="modalDetail" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Detail Loker</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <h6 id="tanggal">000000</h6>
+                  <h5>Nama Perusahaan</h5>
+                  <p id="nama-perusahaan"></p>
+                  <h5>Kontak Person</h5>
+                  <p id="kontak"></p>
+                  <h5>Email</h5>
+                  <p id="email"></p>
+                  <h5>Deskripsi</h5>
+                  <p id="deskripsi"></p>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal fade" id="modalEdit" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Edit Loker</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <form>
+                    <div class="form-group">
+                      <label for="tanggal" class="col-form-label">Tanggal</label>
+                      <input type="text" class="form-control" id="tanggal">
+                    </div>
+                    <div class="form-group">
+                        <label for="recipient-name" class="col-form-label">Nama Perusahaan</label>
+                        <input type="text" class="form-control" id="nama-perusahaan">
+                      </div>
+                      <div class="form-group">
+                        <label for="recipient-name" class="col-form-label">Kontak Person</label>
+                        <input type="text" class="form-control" id="kontak">
+                      </div>
+                      <div class="form-group">
+                        <label for="recipient-name" class="col-form-label">Email</label>
+                        <input type="text" class="form-control" id="email">
+                      </div>
+                    <div class="form-group">
+                      <label for="message-text" class="col-form-label">Deskripsi</label>
+                      <textarea class="form-control" id="deskripsi"></textarea>
+                    </div>
+                  </form>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary">Simpan</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal fade" id="modalHapus" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Hapus Loker</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <h5>Apakah anda ingin Menghapus Loker ini?</h5>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Batal</button>
+                  <button type="button" class="btn btn-danger">Hapus</button>
+                </div>
+              </div>
+            </div>
+          </div>
+      </main>
+    </div>
+  </div>
+  <div class="modal fade" id="modalTambah" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Tambah Loker</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label for="tanggal" class="col-form-label">Tanggal</label>
+              <input type="text" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="recipient-name" class="col-form-label">Nama Perusahaan</label>
+                <input type="text" class="form-control" id="nama-perusahaan">
+              </div>
+              <div class="form-group">
+                <label for="recipient-name" class="col-form-label">Kontak Person</label>
+                <input type="text" class="form-control" id="kontak">
+              </div>
+              <div class="form-group">
+                <label for="recipient-name" class="col-form-label">Email</label>
+                <input type="text" class="form-control" id="email">
+              </div>
+            <div class="form-group">
+              <label for="message-text" class="col-form-label">Deskripsi</label>
+              <textarea class="form-control" id="deskripsi"></textarea>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-success">Tambahkan</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+  
+      
+
+<!-- END Tentang SILOKER -->
+      <footer >
+        <div class="container text-left">
+            <div class="row">
+              <p class="">Develop By Mahasiswa STT-NF @2021</p>
+            </div>
+        </div>
+      </footer>
+
+    <!-- <footer class="ass">
+        <p>Submission Dicoding, Iqbal Assegaf, 2020</p>            
+    </footer> -->
+    
+      <script src="assets/js/jquery.js"></script> 
+      <script src="assets/js/popper.js"></script> 
+      <script src="assets/js/bootstrap.js"></script>
+      <script src="assets/js/bootstrap.min.js"></script>
+
+      <script>
+        $('#modalEdit').on('show.bs.modal', function (event) {
+  var button = $(event.relatedTarget) // Button that triggered the modal
+  var id = button.data('idloker')
+  var tanggal = $('#tanggal'+id).html()
+  var nama = $('#nama'+id).html()
+  var kontak = $('#kontak'+id).html()
+  var email = $('#email'+id).html()
+  var deskripsi = $('#deskripsi'+id).html()
+  // Extract info from data-* attributes
+  // If necessary, you could initiate an AJAX request here (and then do the updating in a callback).
+  // Update the modal's content. We'll use jQuery here, but you could use a data binding library or other methods instead.
+  var modal = $(this)
+  modal.find('#tanggal').val(tanggal)
+  modal.find('.modal-body #nama-perusahaan').val(nama)
+  modal.find('.modal-body #kontak').val(kontak)
+  modal.find('.modal-body #email').val(email)
+  modal.find('.modal-body #deskripsi').val(deskripsi)
+})
+
+$('#modalDetail').on('show.bs.modal', function (event) {
+  var button = $(event.relatedTarget) // Button that triggered the modal
+  var id = button.data('idloker')
+  var tanggal = $('#tanggal'+id).html()
+  var nama = $('#nama'+id).html()
+  var kontak = $('#kontak'+id).html()
+  var email = $('#email'+id).html()
+  var deskripsi = $('#deskripsi'+id).html()
+  // Extract info from data-* attributes
+  // If necessary, you could initiate an AJAX request here (and then do the updating in a callback).
+  // Update the modal's content. We'll use jQuery here, but you could use a data binding library or other methods instead.
+  var modal = $(this)
+  modal.find('#tanggal').html(tanggal)
+  modal.find('.modal-body #nama-perusahaan').html(nama)
+  modal.find('.modal-body #kontak').html(kontak)
+  modal.find('.modal-body #email').html(email)
+  modal.find('.modal-body #deskripsi').html(deskripsi)
+})
+    </script>
+  </body>
+</html>
